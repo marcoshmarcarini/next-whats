@@ -1,0 +1,68 @@
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    gap: 20px;
+}
+
+.FormContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.formControl{
+    display: flex;
+    gap: 20px;
+}
+
+.formcontrol input::placeholder{
+    text-align: center;
+}
+
+.formControl:nth-child(2) input{
+    width: 800px;
+}
+
+.buttonLink{
+    background-color: #16a085;
+    color: #fff;
+    padding: 10px;
+}
+
+.buttonLink:hover{
+    background-color: #1abc9c;
+    transition: 400ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    cursor: pointer;
+}
+
+@media (prefers-color-scheme: dark) {
+    .buttonLink{
+        background-color: #16a085;
+        padding: 10px;
+    }
+
+    .buttonLink:hover{
+        background-color: #1abc9c;
+        transition: 400ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        cursor: pointer;
+    }
+}
+
+@media(max-width: 900px){
+    .formControl:nth-child(2) input{
+        width: 300px;
+    }
+    .formControl{
+        display: flex;
+        flex-direction: column;
+    }
+    .formControl input{
+        width: 300px;
+    }
+}
+
